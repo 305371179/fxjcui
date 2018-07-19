@@ -1,0 +1,106 @@
+@import '~@common/scss/functions.scss';
+.v-cell-input{
+	&:active{
+		background: transparent;
+	}
+	.v-cell-main {
+		min-height: 1.04rem;
+		padding: .28rem .3rem .28rem 0;
+	}
+	button {
+		width: 1.2rem;
+		height: .64rem;
+	}
+	&.code {
+		.v-cell-main {
+			padding: .2rem 0;
+		}
+
+		button {
+			margin: 0 .2rem;
+			border: 0;
+		}
+
+		button:before {
+			content: " ";
+			position: absolute;
+			top: 50%;
+			right: 1.6rem;
+			height: .8rem;
+			border-left: solid 1px #e6e6e6;
+			transform: scaleX(0.5);
+			transform: translateY(-50%);
+		}
+		.sendBtn{
+			background: initial;
+			span{
+				font-size: 0.32rem;
+				opacity: initial;
+				span:not(.get){
+					color: $color-font-fourth;
+					opacity: initial;
+				}
+			}
+		}
+	}
+
+	.v-cell-input-bd{
+		display: flex;
+		align-items: center;
+		.inputs{
+			flex: 1;
+			display: inline-block;
+			vertical-align: middle;
+			input{
+				width: 100%;
+				font-size: $font-h2;
+				height: 1.41176471em;
+				line-height: 1.41176471;
+				box-sizing: border-box;
+			}
+			&.focus-right input{
+				padding-right: px2rem(20);
+			}
+		}
+	}
+	label{
+		display: inline-block;
+		min-width: 1.6rem;
+		margin-right: .24rem;
+		vertical-align: middle;
+	}
+	.inputs{
+		position: relative;
+		span{
+			padding: 0 .02rem;
+			display: inline-block;
+			border-right-style: solid;
+			border-right-width: px2rem(4);
+			border-right-color: #0038ea;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			animation: flicker 1s linear infinite;
+			i{
+				visibility: hidden
+			}
+		}
+	}
+
+	.focus-left{span{left: 0;}}
+	.focus-right{span{right: 0;}}
+	@keyframes flicker{
+		0% {
+		  border-right-color: transparent;
+		}
+		49% {
+		  border-right-color: transparent;
+		}
+		50% {
+			border-right-color: #436bf1;
+		}
+		100% {
+			border-right-color: #436bf1;
+		}
+	  }
+}

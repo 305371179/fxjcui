@@ -1,0 +1,79 @@
+.v-tab-item{
+	width: 100%;
+	font-size: .28rem;
+	color: #666;
+	position: relative;
+	background: #fff;
+	padding: 0 .28rem;
+	box-sizing: border-box;
+	&.shadow{
+		box-shadow: 0 0.02rem 0.01rem rgba(0, 0, 0, 0.1);
+	}
+	.tab-container{
+		left: 0;
+		top: 0;
+		width: 100%;
+		display: flex;
+		position: relative;
+		align-items: center;
+		text-align: center;
+		
+		span{
+			display: inline-block;
+			position: relative;
+			padding: .2rem 0;
+		}
+		$radius:0.14rem;
+		& > .tab-item-message span{
+			&:before{
+			content: '';
+			width: $radius;
+			height: $radius;
+			border-radius:$radius;
+			font-size:$radius;
+			background: #e53935;
+			position: absolute;
+			right: -$radius;
+			top: $radius/2;
+		}
+		}
+		& > .tab-item-active span{
+			color: #e53935;
+			font-weight: bold;
+			&:after{
+				content: '';
+				width: 100%;
+				height: .04rem;
+				background: #e53935;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+			}
+		}
+	}
+	.unscrollable{
+		& > .tab-item{
+			flex: 1;
+		}
+	}
+	.scrollable{
+		overflow-y: hidden;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		
+		& > .tab-item{
+			-webkit-flex: 0 0 auto;
+			padding: 0 .28rem;
+		}
+		&::-webkit-scrollbar{
+			display: none;
+		}
+	}
+	.tab-cos-2{ 
+		justify-content: center;
+		& > .tab-item{
+			width: 34%;
+			flex: none;
+		}
+	 }
+}

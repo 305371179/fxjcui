@@ -1,0 +1,42 @@
+.encourage-warp{
+	padding-top:1rem;
+	.top-img{
+		display: block;
+		margin: 0 auto;
+		width: 2.5rem;
+		height: 2.5rem;
+		background:url(~@/assets/evaluate_topImg.png) no-repeat center;
+		background-size: 100%;
+		position: absolute;
+		left: 50%;
+		top: 0;
+		transform: translateX(-50%);
+	}
+	.encourage-content{
+		font-size:.3rem;
+		padding: 1.8rem .4rem .2rem .4rem;
+		background: #fff;
+		border-radius: 3px;
+	}
+	ul{
+		margin-top: .5rem;
+	}
+	li{
+		color: $color-gray;
+		padding: .2rem 0;
+		&:first-child{
+			color: $color-orange;
+		}
+	}
+	i,span{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	i{
+		width: .34rem;
+		height: .38rem;
+		background: url(~@/assets/evaluate_first.png) no-repeat center;
+		background-size: 100%;
+		margin-right: .2rem;
+	}
+}

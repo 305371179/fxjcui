@@ -1,0 +1,28 @@
+
+@mixin var-bg-img($url) {
+  background: url(../../../common/svg/#{$url}.svg) no-repeat center;
+  background-size: 100%;
+}
+.custom-checkbox{
+	padding: .4rem .3rem;
+	box-sizing: border-box;
+	color: $font-color-t3;
+	display: flex;
+	align-items: flex-start;
+	.custom-checkbox-icon{
+		display: block;
+		width: .38rem;
+		height: .38rem;
+		margin-right: .16rem;
+		@include var-bg-img("protocol_checkbox_no");
+	}
+	.custom-checkbox-txt{
+		flex: 1;
+		a{
+			color: $color-cb;
+		}
+	}
+	.checker{
+		@include var-bg-img("protocol_checkbox_se")
+	}
+}
