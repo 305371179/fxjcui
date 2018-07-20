@@ -12,8 +12,8 @@
   </div>
 </template>
 <script>
-import Group from '../../components/extend/group/index'
-import ToastPlugin from '../../components/extend/toast/plugin'
+import Group from '../../fxjcui/extend/group/index'
+import ToastPlugin from '../../fxjcui/extend/toast/plugin'
 import Vue from 'vue'
 Vue.use(ToastPlugin,{
   position:'middle'

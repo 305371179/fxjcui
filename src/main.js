@@ -3,12 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
 Vue.config.productionTip = false
-// import ToastPlugin from './components/extend/toast/plugin'
-// Vue.use(ToastPlugin,{
-//   position:'top'
-// })
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

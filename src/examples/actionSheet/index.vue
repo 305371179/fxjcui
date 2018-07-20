@@ -12,9 +12,9 @@
   </div>
 </template>
 <script>
-import Group from '../../components/extend/group/index'
-import Cell from '../../components/extend/cell/index'
-import ActionSheet from '../../components/extend/actionSheet/index'
+import Group from '../../fxjcui/extend/group/index'
+import Cell from '../../fxjcui/extend/cell/index'
+import ActionSheet from '../../fxjcui/extend/actionSheet/index'
 export default {
   components: {
     Group, Cell, ActionSheet

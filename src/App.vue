@@ -1,12 +1,29 @@
 <template>
   <div id="app">
+    <router-link :to="{name:'exampleList'}" v-show="show" >
+      <v-button style="margin-top:0.3rem;margin-bottom: 0.3rem;">返回列表</v-button>
+    </router-link>
     <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data:function(){
+    return {
+      show:false
+    }
+  },
+  watch: {
+    $route (to, from) {
+      if(this.$route.name==='exampleList'){
+        this.show=false
+      }else{
+        this.show=true
+      }
+    }
+  }
 }
 </script>
 

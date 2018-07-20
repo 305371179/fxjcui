@@ -129,10 +129,10 @@
   </div>
 </template>
 <script>
-import Group from '../../components/extend/group/index'
-import GlobalButtonMultiple from '../../components/extend/globalButtonMultiple/index'
-import GlobalBigButton from '../../components/extend/globalBigButton/index'
-import TradeButton from '../../components/extend/tradeButton/index'
+import Group from '../../fxjcui/extend/group/index'
+import GlobalButtonMultiple from '../../fxjcui/extend/globalButtonMultiple/index'
+import GlobalBigButton from '../../fxjcui/extend/globalBigButton/index'
+import TradeButton from '../../fxjcui/extend/tradeButton/index'
 
 export default {
   components: {

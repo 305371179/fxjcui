@@ -55,12 +55,12 @@
   </div>
 </template>
 <script>
-import Group from '../../components/extend/group/index'
-import Cell from '../../components/extend/cell/index'
-import CellInput from '../../components/extend/cellInput/index'
-import VInlineSwitch from '../../components/extend/inlineSwitch/index'
-import NumberKeyboard from '../../components/extend/numberKeyboard/index'
-import MsgCode from '../../components/extend/msgCode/index'
+import Group from '../../fxjcui/extend/group/index'
+import Cell from '../../fxjcui/extend/cell/index'
+import CellInput from '../../fxjcui/extend/cellInput/index'
+import VInlineSwitch from '../../fxjcui/extend/inlineSwitch/index'
+import NumberKeyboard from '../../fxjcui/extend/numberKeyboard/index'
+import MsgCode from '../../fxjcui/extend/msgCode/index'
 
 export default {
   components: {

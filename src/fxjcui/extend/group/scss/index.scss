@@ -1,0 +1,22 @@
+@import "../../../common/scss/index";
+
+.v-group{
+	.v-group-title{
+		span.default-title{
+			display: inline-block;
+			font-size: $font-h4;
+			padding: .24rem .3rem .24rem .3rem;
+			color: $font-color-t3;
+		}
+
+	}
+	.v-group-content{
+		background: #fff;
+		width: 100%;
+		position: relative;
+		box-sizing: border-box;
+	}
+	.v-cell:last-child{
+		.v-cell-main:after{border-bottom: solid 1px transparent;}
+	}
+}

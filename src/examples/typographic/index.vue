@@ -22,7 +22,7 @@
   </div>
 </template>
 <script>
-import Group from '../../components/extend/group/index'
+import Group from '../../fxjcui/extend/group/index'
 export default {
   components: {
     Group

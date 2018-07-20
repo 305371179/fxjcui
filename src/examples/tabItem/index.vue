@@ -19,8 +19,8 @@
   </div>
 </template>
 <script>
-import Group from '../../components/extend/group/index'
-import TabItem from '../../components/extend/tabItem/index'
+import Group from '../../fxjcui/extend/group/index'
+import TabItem from '../../fxjcui/extend/tabItem/index'
 export default {
   components: {
     Group, TabItem
@@ -62,9 +62,9 @@ export default {
     }
   },
   mounted(){
-    setTimeout(()=>{
-      this.selected=3
-    },1000)
+    // setTimeout(()=>{
+    //   this.selected=3
+    // },1000)
   },
   methods: {
     clickHandler(item){

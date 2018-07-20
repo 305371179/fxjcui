@@ -1,0 +1,18 @@
+{
+  "name": "fxjcui",
+  "version": "1.0.6",
+  "description": "发现精彩ui组件",
+  "main": "fxjcui/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/305371179/fxjcui.git"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chenguose",
+  "license": "ISC"
+}

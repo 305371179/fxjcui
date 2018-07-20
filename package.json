@@ -1,6 +1,6 @@
 {
-  "name": "fxjc_ui",
-  "version": "1.0.4",
+  "name": "fxjcui",
+  "version": "1.0.0",
   "description": "fxjc_ui components",
   "author": "chenguose",
   "private": false,
@@ -15,7 +15,8 @@
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "export": "node export.js"
   },
   "dependencies": {
     "node-sass": "^4.9.2",

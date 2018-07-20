@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Demo from '@/demo/index'
-import { routesCreator } from "../demo/js/routerTools";
+import Demo from '../demo/index'
+import ExampleList from '../ExampleList'
+import { routes } from "../demo/js/routerTools";
 Vue.use(Router)
 
 export default new Router({
@@ -9,9 +10,14 @@ export default new Router({
     {
       path: '/',
       name: 'Demo',
-      redirect:'/button',
+      redirect: '/exampleList',
       component: Demo,
-      children:routesCreator()
-    }
+      children: routes
+    },
+    {
+      path: '/exampleList',
+      name: 'exampleList',
+      component: ExampleList
+    },
   ]
 })

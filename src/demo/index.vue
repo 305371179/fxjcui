@@ -4,7 +4,7 @@
   </div>
 </template>
 <script>
-  import base from '../components/base/index'
+  import base from '../fxjcui/base/index'
   import Vue from 'vue'
   Vue.use(base)
   export default {

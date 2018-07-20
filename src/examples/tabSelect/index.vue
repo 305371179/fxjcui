@@ -18,8 +18,8 @@
   </div>
 </template>
 <script>
-  import Group from '../../components/extend/group/index'
-  import TabSelect from '../../components/extend/tabSelect/index'
+  import Group from '../../fxjcui/extend/group/index'
+  import TabSelect from '../../fxjcui/extend/tabSelect/index'
 
   export default {
     components: {
@@ -73,6 +73,7 @@
   }
 </script>
 <style lang="scss" scoped>
+  @import "../../fxjcui/common/scss/index";
   @mixin base {
     height: px2rem(104);
     line-height: px2rem(104);

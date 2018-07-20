@@ -12,8 +12,8 @@
   </div>
 </template>
 <script>
-import Group from '../../components/extend/group/index'
-import TabFilter from '../../components/extend/tabFilter/index'
+import Group from '../../fxjcui/extend/group/index'
+import TabFilter from '../../fxjcui/extend/tabFilter/index'
 export default {
   components: {
     Group, TabFilter
