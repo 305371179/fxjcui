@@ -20,7 +20,12 @@
 	.w4{ min-width: .44rem }
 	.align-left{text-align:left}
 	.align-center{text-align:center}
-	.align-right{text-align:right}
+	.align-right{
+    text-align:right;
+    label{
+      color: #222222;
+    }
+  }
 
 
 }

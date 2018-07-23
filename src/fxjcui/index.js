@@ -1,8 +1,6 @@
 import base from './base/index'
-import toastPlugin from './extend/toast/plugin'
 import Vue from 'vue'
 Vue.use(base)
-Vue.use(toastPlugin)
 
 const importComponent = (componentName) =>{
   return ()=>import(`./extend/${componentName}`)
@@ -23,10 +21,9 @@ const selectItem = importComponent('selectItem')
 const tabFilter = importComponent('tabFilter')
 const tabItem = importComponent('tabItem')
 const tabSelect = importComponent('tabSelect')
-const toast = importComponent('toast')
 const tradeButton = importComponent('tradeButton')
 
-export {
+export const components={
   Bscroll,
   actionSheet,
   cell,
@@ -42,6 +39,14 @@ export {
   tabFilter,
   tabItem,
   tabSelect,
-  toast,
   tradeButton,
+}
+
+export const allIn = {
+  install(Vue){
+    for(let k in components){
+      Vue.component(k,components[k])
+    }
+
+  }
 }

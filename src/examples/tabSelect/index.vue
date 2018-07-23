@@ -10,7 +10,7 @@
           <div>
             <span>{{item.value}}
             </span>
-            <i class="iconfont icon-list_radio" v-if="item.selected"></i>
+            <checked-icon v-if="item.selected"></checked-icon>
           </div>
         </div>
       </div>
@@ -27,6 +27,7 @@
     },
     data() {
       return {
+
         tabSelectValue: '',
         tabs: [{
           key: '乒乓球',

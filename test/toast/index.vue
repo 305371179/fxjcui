@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import SafariFixIssue from '../../vux/mixins/safari-fix'
+import SafariFixIssue from '../../src/fxjcui/vux/mixins/safari-fix'
 
 export default {
   name: 'toast',
@@ -120,10 +120,10 @@ export default {
 </script>
 
 <style lang="less">
-@import '../../vux/styles/transition.less';
-@import '../../vux/styles/weui/widget/weui_tips/weui_mask';
-@import '../../vux/styles/weui/icon/weui_icon_font';
-@import '../../vux/styles/weui/widget/weui_tips/weui_toast';
+@import '../../src/fxjcui/vux/styles/transition.less';
+@import '../../src/fxjcui/vux/styles/weui/widget/weui_tips/weui_mask';
+@import '../../src/fxjcui/vux/styles/weui/icon/weui_icon_font';
+@import '../../src/fxjcui/vux/styles/weui/widget/weui_tips/weui_toast';
 .weui-icon_toast.weui-icon-success-no-circle:before {
   color: #FFFFFF;
   font-size: 0.8rem;

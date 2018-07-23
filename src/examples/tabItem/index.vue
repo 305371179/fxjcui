@@ -12,9 +12,9 @@
     <group title="五个选项">
       <tab-item :item="item4" :selected="selected" @clickHandler="clickHandler"></tab-item>
     </group>
-    <group title="六个选项">
-      <tab-item :item="item5" :selected="selected" @clickHandler="clickHandler"></tab-item>
-    </group>
+    <!--<group title="六个选项">-->
+      <!--<tab-item :item="item5" :selected="selected" @clickHandler="clickHandler"></tab-item>-->
+    <!--</group>-->
 
   </div>
 </template>
@@ -50,7 +50,7 @@ export default {
           {title:'选项三'},
           {title:'选项四'},
           {title:'选项五'},
-        ],
+        ]/*,
       item5:[
           {title:'选项一',message:true},
           {title:'选项二'},
@@ -58,7 +58,7 @@ export default {
           {title:'选项四'},
           {title:'选项五'},
           {title:'选项六'},
-        ],
+        ],*/
     }
   },
   mounted(){

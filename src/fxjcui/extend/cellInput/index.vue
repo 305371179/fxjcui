@@ -37,7 +37,7 @@
 			</div>
 		</div>
 		<div v-if="showIcon" slot="cell-icon" class="custom-icon" @click="$emit('clickIconHandler')">
-			<i :class="icon"></i>
+			<i :class="icon" :style="iconStyle"></i>
 		</div>
 	</cell>
 </template>
@@ -72,6 +72,23 @@
 					'svg-explain_linear': this.iconType === 'tips',
 					'svg-camera': this.iconType === 'camera'
 				}
+			},
+			iconStyle(){
+			  let style = {}
+			  if(this.iconType === 'tips'){
+			    let tips = require('../../common/svg/explain_linear.svg')
+			    style={
+            background: `url(${tips}) no-repeat center`,
+            backgroundSize: '100%'
+          }
+        }else if(this.iconType === 'camera'){
+          let tips = require('../../common/svg/camera.svg')
+          style={
+            background: `url(${tips}) no-repeat center`,
+            backgroundSize: '100%'
+        }
+        }
+				return style
 			},
 			showIcon(){
 					if(this.iconType === 'tips' || this.iconType === 'camera') return true

@@ -24,7 +24,7 @@
     </group>
     <group title="开关">
       <cell :title="{desc:'开关'}">
-        <v-inline-switch v-model="sswitch" slot="cell-ft" @clickHandler="oc"></v-inline-switch>
+        <inline-switch v-model="sswitch" slot="cell-ft" @clickHandler="oc"></inline-switch>
       </cell>
     </group>
 
@@ -58,7 +58,7 @@
 import Group from '../../fxjcui/extend/group/index'
 import Cell from '../../fxjcui/extend/cell/index'
 import CellInput from '../../fxjcui/extend/cellInput/index'
-import VInlineSwitch from '../../fxjcui/extend/inlineSwitch/index'
+import InlineSwitch from '../../fxjcui/extend/inlineSwitch/index'
 import NumberKeyboard from '../../fxjcui/extend/numberKeyboard/index'
 import MsgCode from '../../fxjcui/extend/msgCode/index'
 
@@ -66,7 +66,7 @@ export default {
   components: {
     Group,
     Cell,
-    VInlineSwitch,
+    InlineSwitch,
     CellInput,
     NumberKeyboard,
     MsgCode

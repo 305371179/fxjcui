@@ -1,6 +1,6 @@
 import objectAssign from 'object-assign'
 import ToastComponent from '../index'
-import { mergeOptions } from '../../../vux/libs/plugin_helper'
+import { mergeOptions } from '../../../src/fxjcui/vux/libs/plugin_helper'
 
 let $vm
 let watcher

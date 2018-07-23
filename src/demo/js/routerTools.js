@@ -30,7 +30,6 @@ import header from '../../examples/header'
 import tabFilter from '../../examples/tabFilter'
 import tabItem from '../../examples/tabItem'
 import tabSelect from '../../examples/tabSelect'
-import toast from '../../examples/toast'
 import typographic from '../../examples/typographic'
 
 
@@ -45,7 +44,6 @@ const names = {
   tabFilter,
   tabItem,
   tabSelect,
-  toast,
   typographic
 }
 console.log(names)

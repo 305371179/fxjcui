@@ -42,7 +42,7 @@
 						<div class="item" :class="{'choiced': selected === item.value}" v-for="(item, index) in cardList.normal" :value="item.value" :key="index" @click="clickNormalItem(item)">
 							<div>
 								<span>{{item.key}}</span>
-								<i v-if="selected === item.value" class="iconfont icon-list_radio"></i>
+                <checked-icon v-if="item.selected"></checked-icon>
 							</div>
 						</div>
 					</div>
